@@ -10,12 +10,12 @@ export default function HeroBanner({ anime }) {
 
   return (
     <section className="mt-8 stripes rounded-3xl border-2 border-ink bg-white/40 p-1 shadow-brut-lg sm:mt-12">
-      <div className="grain-lines grid gap-8 rounded-[1.3rem] border-2 border-ink bg-ink px-6 py-10 text-cream sm:px-10 sm:py-12 lg:grid-cols-[220px_1fr] lg:items-center lg:py-14">
+      <div className="grain-lines flex flex-col gap-6 rounded-[1.3rem] border-2 border-ink bg-ink px-6 py-8 text-cream sm:px-10 sm:py-12 lg:grid lg:grid-cols-[220px_1fr] lg:items-center lg:gap-8 lg:py-14">
         {anime.image && (
           <img
             src={anime.image}
             alt={stripHtml(anime.title)}
-            className="mx-auto hidden aspect-[2/3] w-44 rounded-2xl border-2 border-cream/70 object-cover shadow-brut lg:block"
+            className="mx-auto aspect-[2/3] w-32 rounded-2xl border-2 border-cream/70 object-cover shadow-brut sm:w-44 lg:w-full"
           />
         )}
 
