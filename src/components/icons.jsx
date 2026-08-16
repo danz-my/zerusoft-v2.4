@@ -119,3 +119,33 @@ export function LightbulbIcon(props) {
     </svg>
   );
 }
+
+export function HistoryIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" width="20" height="20" {...base} {...props}>
+      <path d="M3 12a9 9 0 109-9 9 9 0 00-6.36 2.64L3 8" />
+      <path d="M3 3v5h5" />
+      <path d="M12 7v5l3.5 3.5" />
+    </svg>
+  );
+}
+
+export function GridIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" width="20" height="20" {...base} {...props}>
+      <rect x="3" y="3" width="7" height="7" rx="1.5" />
+      <rect x="14" y="3" width="7" height="7" rx="1.5" />
+      <rect x="3" y="14" width="7" height="7" rx="1.5" />
+      <rect x="14" y="14" width="7" height="7" rx="1.5" />
+    </svg>
+  );
+}
+
+export function CalendarIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" width="20" height="20" {...base} {...props}>
+      <rect x="3" y="5" width="18" height="16" rx="2" />
+      <path d="M3 10h18M8 3v4M16 3v4" />
+    </svg>
+  );
+}
