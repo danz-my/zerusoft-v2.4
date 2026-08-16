@@ -1,10 +1,15 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import BottomNav from "./components/BottomNav";
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import Episode from "./pages/Episode";
 import Search from "./pages/Search";
 import GenrePage from "./pages/GenrePage";
+import GenreIndex from "./pages/GenreIndex";
+import Schedule from "./pages/Schedule";
+import Bookmarks from "./pages/Bookmarks";
+import History from "./pages/History";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ForgotPassword from "./pages/ForgotPassword";
@@ -49,12 +54,16 @@ export default function App() {
       <AuthProvider>
         <div className="flex min-h-screen flex-col bg-cream font-body text-ink">
           <Navbar />
-          <div className="flex-1">
+          <div className="flex-1 pb-20 lg:pb-0">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/anime/:id" element={<Detail />} />
               <Route path="/episode/:episodeId" element={<Episode />} />
+              <Route path="/genre" element={<GenreIndex />} />
               <Route path="/genre/:id" element={<GenrePage />} />
+              <Route path="/jadwal" element={<Schedule />} />
+              <Route path="/bookmark" element={<Bookmarks />} />
+              <Route path="/riwayat" element={<History />} />
               <Route path="/search" element={<Search />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
@@ -66,6 +75,7 @@ export default function App() {
             </Routes>
           </div>
           <Footer />
+          <BottomNav />
         </div>
       </AuthProvider>
     </BrowserRouter>
