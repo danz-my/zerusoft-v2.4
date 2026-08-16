@@ -37,9 +37,9 @@ export default function AnimeCard({ anime }) {
           </span>
         </div>
       </div>
-      <div className="flex flex-1 flex-col gap-1 border-t-2 border-ink p-3">
+      <div className="flex flex-col gap-1 border-t-2 border-ink p-3">
         <h3
-          className="line-clamp-2 font-display text-sm font-bold leading-snug"
+          className="line-clamp-2 min-h-[2.6em] font-display text-sm font-bold leading-snug"
           dangerouslySetInnerHTML={{ __html: anime.title || "Tanpa judul" }}
         />
       </div>
